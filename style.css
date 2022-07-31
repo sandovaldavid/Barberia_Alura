@@ -1,0 +1,306 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: #BBBBBB; /*cambiar el color al fondo*/
+    padding: 20px 0; /*espaciado interno*/
+}
+.caja{
+    width: 940px;/*tamaño que ocupa el elemto en con respecto a la caja*/
+    position: relative;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;/*mueve el elemento para colocarlo en una determinada posicion*/
+    top: 110px;
+    right: 0px;
+}
+nav li{
+    display: inline-block;/*sirve para que el elemento solo ocupe su tamaño definido*/
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;/*transforma en mayusculas el texto*/
+    color: black;/*cambia de color al texto*/
+    font-weight: bold;/*aplica el formato negrita al texto*/
+    font-size: 22px;/*darle tamaño al texto*/
+    text-decoration: none;/* eliminar el subrayado al texto*/
+}
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0px 50px 0px;/*el espaciamiento interno de un elemento*/
+}
+.productos li{
+    display: inline-block;
+    text-align: center;/*alinear el texto al centro */
+    width: 30%;
+    vertical-align: top;/*alineado vertical del texto*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;/*hace que elemento dendro de otro elemento se ajuste al elemnto quue lo contiene*/
+    border: 5px solid black;/*definir bordes */
+    border-radius: 10px;/*redondear los bordes*/
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.producto_descripcion{
+    font-size: 18px;
+}
+.producto_precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+nav a:hover{/*hover-> cuando pasas el maus por ese elemento se aplica laa lineas de abajo*/
+    color:#C78C19;
+    text-decoration: underline;
+}
+.productos li:hover{
+    border-color: #C78C19;
+}
+.productos li:active{/*active-> cuando haces click en  ese elemento se aplica laa lineas de abajo*/
+    border-color: green;
+}
+.productos li:hover h2{/*ace lo mismo pero los activa solo para los titulos */
+    font-size: 33px;
+}
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+form{
+    margin: 40px 0;
+}
+
+form label,form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;/*aplicar transiciones*/
+    cursor: pointer;
+}
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2) rotate(70deg);
+}
+table{
+    margin: 40px 40px;
+}
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+/*CSS CONTACTO*/
+
+.main-contacto{
+    width: 940px;
+    margin: 0 auto;
+}
+/*CSS PARA NUETRO HOME*/
+
+
+/*main > p{
+    Sintaxis--->   elemento > hijo 
+    background: red;
+}
+img + p{ aplicar color amarillo al parrafo que esta despues de la imagen
+    background: yellow;
+}
+img ~ p{Aplicar a todos los parrafos despues de img el color green
+    background: green;
+}
+.principal p:not(#mision){Aplicar a todo menos al parrafo con id mision
+    background: orange;
+}
+*/
+
+.principal{
+    padding: 3em;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;  
+    /*box-shadow: inset 0 0 30px red;*/
+}
+.banner{
+    width: 100%;
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left; /* limpiar todo lo aplicado a la izquierdad despues de mi titulom principal*/
+
+    /*color: rgba(218, 0, 0,30%);*/
+    /*text-shadow: 2px 2px 10px red;*/
+
+}
+/*.titulo-principal::first-letter{
+    font-weight: bold;
+}
+.titulo-principal::before{
+    content: "[";
+}
+.titulo-principal::after{
+    content: "]";
+}
+P::first-line{
+    font-style: italic;
+}
+*/
+.principal p{
+    margin: 0 0 1em;
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.mapa{
+    padding: 3em 0;
+    /*background: linear-gradient(90deg,red 50%,blue , orange);*/
+    /*background: radial-gradient(red,orange,blue);*/
+    background: linear-gradient(#FEFEFE,#888888);
+
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+.mapa-contenido{
+    width: 940px;
+    margin: 0px auto;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0px auto;
+}
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;
+    /*box-shadow: 10px 10px 30px 15px black, -10px -10px yellow, -15px 10px rgba(50,50,50,0.5); */
+    /*oirden -> vertical (|)   Horizaontal(-)*/
+    box-shadow: 10px 10px 30px 15px  black;
+                /* tamaño vertical   tamaño horizontal   difuminacion   rango de difuminacion*/
+}
+.imagen-diferenciales:hover{
+    opacity: 0.3; /*aplicar opacidad*/
+}
+.itens{
+    line-height: 1.5; /*da un espaciado entre las lineas de texto */
+}
+.itens::before{ /*applica una estrella(antes del texxto) a todos mis elementos de itens */
+    content: "★";
+}
+
+.itens:first-child{
+    font-weight: bold; /*first --> primer hijo
+                        last--> ultimio hijo
+                        nth() -->un determinado elelemento, ejemplo 3
+                            2n--> todos los pares
+                            2n-1 --> todos los impares*/
+}
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+@media screen and (max-width:480px){/*modificaciones para celular */
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .caja,.principal,.mapa-contenido,.contenido-diferenciales,.video,.main-contacto{
+        width: auto;
+    }
+    .lista-diferenciales,.imagen-diferenciales{
+        width: 100%;
+    }
+    .diferenciales{
+        padding: 0px;
+    }
+    .lista-diferenciales{
+        margin: 0 0 1.5em 0;
+    }
+
+    /*Actualizacion pantalla celular Producuctos*/
+
+    .productos{
+        width: auto;
+        margin: 50px auto 0 auto;
+        padding:0;
+    }
+    .productos li{
+        display: block;
+        width: 80%;
+        margin: 0px auto 50px auto;
+    }
+    /*Actualizacion pantalla celular contacto*/
+
+    form{
+        padding: 0 7%;
+    }
+    table{
+        margin: 40px 10%;
+    }
+
+}
+
